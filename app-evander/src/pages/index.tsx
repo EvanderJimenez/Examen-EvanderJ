@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import { Carousel } from "./components/carousel/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
+
 export default function Home() {
   return (
     <>
