@@ -6,17 +6,14 @@ import { Label, RepositoryInformation } from "../label/Label";
 interface contextInformation {
   contexts: RepositoryInformation[];
 }
-
+//
 export function Carousel(props: contextInformation) {
-  const url = "https://api.github.com/users/EvanderJimenez/repos";
-  const [repos, setRepos] = useState([]);
-
   return (
     <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false">
       <div className="carousel-inner">
         <div className="carousel-item active">
           {props.contexts.map((context) => (
-            <Label key = "" title= {context.title} description= {context.description} itemDescription={context.itemDescription} itemDescription2= {context.itemDescription2} link={context.link}/>
+            <Label key={context.full_name} full_name={context.full_name} description={context.description} html_url={context.html_url} />
           ))}
         </div>
       </div>
