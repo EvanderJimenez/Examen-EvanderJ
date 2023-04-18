@@ -47,11 +47,10 @@ export default function Home() {
         <div>
           <Carousel contexts={Data} />
         </div>
-       
       </main>
       <footer>
         <Card />
-        </footer>
+      </footer>
     </>
   );
 }
