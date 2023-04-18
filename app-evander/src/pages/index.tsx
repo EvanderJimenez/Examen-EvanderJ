@@ -9,8 +9,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState, useLayoutEffect, useEffect } from "react";
 
 interface RepositoryInformation {
-  link: string;
-  title: string;
+  html_url: string;
+  full_name: string;
   description: string;
 }
 

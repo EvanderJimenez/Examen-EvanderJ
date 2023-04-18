@@ -14,7 +14,7 @@ export function Carousel(props: contextInformation) {
       <div className="carousel-inner">
         <div className="carousel-item active">
           {props.contexts.map((context) => (
-            <Label key = {context.title} title= {context.title} description= {context.description} link={context.link}/>
+            <Label key = {context.full_name} full_name = {context.full_name} description= {context.description} html_url ={context.html_url}/>
           ))}
         </div>
       </div>
