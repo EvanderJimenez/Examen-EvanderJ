@@ -8,15 +8,13 @@ interface contextInformation {
 }
 
 export function Carousel(props: contextInformation) {
-  const url = "https://api.github.com/users/EvanderJimenez/repos";
-  const [repos, setRepos] = useState([]);
 
   return (
     <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false">
       <div className="carousel-inner">
         <div className="carousel-item active">
           {props.contexts.map((context) => (
-            <Label key = "" title= {context.title} description= {context.description} itemDescription={context.itemDescription} itemDescription2= {context.itemDescription2} link={context.link}/>
+            <Label key = {context.title} title= {context.title} description= {context.description} link={context.link}/>
           ))}
         </div>
       </div>
